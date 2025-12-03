@@ -1,7 +1,7 @@
 export function report(
+  input_id,
   input_weapons,
   input_text,
-  input_id,
   input_terroristName = 'Muhammad'
 ) {
   let Details = {

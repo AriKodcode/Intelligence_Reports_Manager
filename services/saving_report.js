@@ -1,5 +1,4 @@
 import { db } from '../db/db_list.js';
-import { report } from './report.js';
 
 export function save_report(new_report) {
   let check = 'ok';
@@ -13,7 +12,3 @@ export function save_report(new_report) {
     db.push(new_report);
   }
 }
-
-save_report(report(['knife'], 'palastini', '2345'));
-save_report(report(['knife'], 'palastini', '22'));
-console.log(db);
