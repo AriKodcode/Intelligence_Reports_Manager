@@ -1,0 +1,25 @@
+{
+  "name": "intelligence_reports_manager",
+  "version": "1.0.0",
+  "description": "\"# Intelligence_Reports_Manager\"",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AriKodcode/Intelligence_Reports_Manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/AriKodcode/Intelligence_Reports_Manager/issues"
+  },
+  "homepage": "https://github.com/AriKodcode/Intelligence_Reports_Manager#readme",
+  "dependencies": {
+    "analiza-sync": "^1.0.1",
+    "nanoid": "^5.1.6"
+  }
+}
