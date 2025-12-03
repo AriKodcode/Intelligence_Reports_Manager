@@ -1,4 +1,5 @@
 import input from 'analiza-sync';
+import { nanoid } from 'nanoid';
 import { report } from './services/report.js';
 import { update } from './utils/update_object.js';
 import { delete_by_id } from './utils/delete_report.js';
@@ -22,7 +23,12 @@ while (flag2) {
         if (id1 == '') {
           id1 = nanoid();
         }
-        let new_report1 = report(id1, [weapons1], text1, name1);
+        let new_report1;
+        if (name1 !== '') {
+          new_report1 = report(id1, [weapons1], text1, name1);
+        } else {
+          new_report1 = report(id1, [weapons1], text1);
+        }
         save_report(new_report1);
         console.log(`added new report\n`, new_report1);
 
